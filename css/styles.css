@@ -71,7 +71,19 @@ address a:focus {
   gap: 40px;
 }
 
-
+.nav-item {
+  color: #404bbf;
+}
+.nav-item::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 .nav-link {
   display: block;
   font-weight: 500;
@@ -93,19 +105,6 @@ address a:focus {
   color: #404bbf;
 }
 
-.nav-link.current {
-  color: #404bbf;
-}
-
-.nav-link.current::after {
-  content:" ";
-  position: absolute;
-  top: 44px;
-  bottom: 2px; /* ?  RADIUS or padding ? */
-  width: 48px;
-  height: 4px;
-  background-color: #404bbf;
-}
 /* Contacts */
 .address {
   display: block;
@@ -153,6 +152,8 @@ address a:focus {
     ),
     url(/images/hero/background-office.jpg);
   padding: 188px 0;
+  max-width: 1440px;
+  background-position: center;
 }
 
 .hero-title {
@@ -225,7 +226,16 @@ address a:focus {
   display: flex;
   gap: 24px;
 }
-
+.icon-container-sth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
 .strengths-item {
   flex-basis: calc((100% - 72px) / 4);
 }
@@ -264,8 +274,7 @@ address a:focus {
   background-color: #ffffff;
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.8),
-  0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-item-container {
   padding: 32px 0;
@@ -402,11 +411,15 @@ address a:focus {
 
 /* Footer */
 .footer {
-  display: block;
+  display: flex;
+  align-items: baseline;
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.footer-container {
+  margin-right: 120px;
 
+}
 .footer-logo , .logo-link {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -428,18 +441,33 @@ address a:focus {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-.social {
-  display: block;
-}
+
 
 .footer-icon-list{
   display: flex;
   max-width: 208px;
   justify-content: flex-start;
   gap: 16px;
+}
+
+.footer-icon-item{
+  width: 40px;
+  height: 40px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+:root {
+  --bg-color: #4d5ae5
+}
+.footer-icon-link{
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-icon-link:hover,
