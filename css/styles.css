@@ -417,8 +417,9 @@ address a:focus {
   padding: 100px 0;
 }
 .footer-container {
-  margin-right: 120px;
-
+max-width: 873px;
+margin-left: 105px;
+margin-right: 0;
 }
 .footer-logo , .logo-link {
   display: inline-block;
@@ -441,7 +442,9 @@ address a:focus {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-
+.social{
+ margin-right: 120px;
+}
 
 .footer-icon-list{
   display: flex;
