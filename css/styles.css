@@ -70,7 +70,6 @@ address a:focus {
   display: flex;
   gap: 40px;
 }
-
 .active-link {
   color: #404bbf;
 }
@@ -322,6 +321,12 @@ address a:focus {
 .team-icon-link:focus{
   background-color: #404bbf;
 }
+
+.team-icon,
+.icon{
+  fill: white;
+}
+
 /* Section 4: Portfolio */
 .portfolio {
   background-color: #ffffff;
@@ -354,11 +359,9 @@ address a:focus {
 
 .portfolio-item:hover,
 .portfolio-item:focus{
-  transform: translateY(0%);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
-
 
 .portfolio-item-container{
   padding: 32px 16px;
@@ -370,9 +373,11 @@ address a:focus {
 .image-wrapper{
   position: relative;
   overflow: hidden;
-
 }
 
+li:hover .image-wrapper p{
+  transform: translateY(0%);
+}
 :root{
   --overlay-text-color: #f4f4fd
 }
@@ -451,8 +456,6 @@ margin-right: 0;
 
 .footer-icon-list{
   display: flex;
-  max-width: 208px;
-  justify-content: flex-start;
   gap: 16px;
 }
 
@@ -480,12 +483,14 @@ margin-right: 0;
 .footer-icon-link:focus{
   background-color: #31d0aa;
 }
-
+:root {
+  --footer-text-color: #ffffff;
+}
 .footer-icon-text{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: var(--footer-text-color);
   margin-bottom: 16px;
 }
