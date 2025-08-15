@@ -425,9 +425,12 @@ li:hover .image-wrapper p{
   padding: 100px 0;
 }
 .footer-container {
-max-width: 873px;
-margin-left: 105px;
-margin-right: 0;
+display: flex;
+align-items: baseline;
+
+}
+.logo-container {
+  margin-right: 120px;
 }
 .footer-logo , .logo-link {
   display: inline-block;
