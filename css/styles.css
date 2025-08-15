@@ -71,6 +71,7 @@ address a:focus {
   gap: 40px;
 }
 .active-link {
+  position: relative;
   color: #404bbf;
 }
 .active-link::after {
@@ -465,9 +466,6 @@ align-items: baseline;
 .footer-icon-item{
   width: 40px;
   height: 40px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 :root {
   --bg-color: #4d5ae5
