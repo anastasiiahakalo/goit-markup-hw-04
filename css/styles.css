@@ -70,10 +70,7 @@ address a:focus {
   display: flex;
   gap: 40px;
 }
-.active-link {
-  position: relative;
-  color: #404bbf;
-}
+
 .active-link::after {
   content: "";
   width: 100%;
@@ -104,6 +101,10 @@ address a:focus {
   color: #404bbf;
 }
 
+.active-link {
+  position: relative;
+  color: #404bbf;
+}
 /* Contacts */
 .address {
   display: block;
