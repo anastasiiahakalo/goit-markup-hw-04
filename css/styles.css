@@ -428,10 +428,11 @@ li:hover .image-wrapper p{
 .footer-container {
 display: flex;
 align-items: baseline;
+gap: 600px;
 
 }
 .logo-container {
-  margin-right: 120px;
+  margin-left: 120px;
 }
 .footer-logo , .logo-link {
   display: inline-block;
@@ -454,8 +455,8 @@ align-items: baseline;
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-.social{
- margin-right: 120px;
+.social-container{
+ 
 }
 
 .footer-icon-list{
