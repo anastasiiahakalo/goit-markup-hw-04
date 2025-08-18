@@ -150,10 +150,12 @@ address a:focus {
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
     ),
-    url(/images/hero/background-office.jpg);
+    url(../images/hero/background-office.jpg);
   padding: 188px 0;
   max-width: 1440px;
   background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -302,6 +304,7 @@ address a:focus {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
 }
 
 .team-icon-link{
@@ -420,16 +423,12 @@ li:hover .image-wrapper p{
 
 /* Footer */
 .footer {
-  display: flex;
-  align-items: baseline;
   background-color: #2e2f42;
   padding: 100px 0;
 }
 .footer-container {
 display: flex;
 align-items: baseline;
-margin-left: 120px;
-gap: 500px;
 
 }
 .logo-container {
@@ -455,9 +454,6 @@ gap: 500px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-}
-.social-container{
- 
 }
 
 .footer-icon-list{
@@ -497,4 +493,8 @@ gap: 500px;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   margin-bottom: 16px;
+}
+
+.social-container{
+  margin-left: 120px;
 }
